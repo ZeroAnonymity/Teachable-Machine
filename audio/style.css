@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+}
+
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #4f46e5;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background: #f0f0ff;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #1a202c;
+    margin-bottom: 8px;
+}
+
+p.subtitle {
+    color: #718096;
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+}
+
+button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 32px;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+button:disabled {
+    background: #a5b4fc;
+    cursor: not-allowed;
+}
+
+#status {
+    font-size: 0.9rem;
+    color: #e53e3e;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    min-height: 20px;
+}
+
+#results {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.result-item {
+    background: white;
+    border-radius: 10px;
+    padding: 14px 18px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.result-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.bar-bg {
+    background: #e2e8f0;
+    border-radius: 999px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: #4f46e5;
+    transition: width 0.15s ease-out;
+    width: 0%;
+}
+
+.bar-fill.top {
+    background: #38a169;
+}
+
+#top-result {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 24px;
+    min-height: 36px;
+}

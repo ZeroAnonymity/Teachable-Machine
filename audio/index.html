@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Sound Recognizer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/audio@latest/dist/teachablemachine-audio.min.js"></script>
+</head>
+<body>
+
+    <a href="../index.html" class="back-btn">← Home</a>
+
+    <h1>🎙️ Animal Sound Recognizer</h1>
+    <p class="subtitle">Uses your microphone to identify animal sounds</p>
+
+    <div id="top-result"></div>
+
+    <button id="btn" onclick="toggleListening()">Start Listening</button>
+    <div id="status"></div>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
